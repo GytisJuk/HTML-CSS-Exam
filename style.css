@@ -23,11 +23,13 @@ nav .content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
     padding: 32px;
 }
 nav ul {
     display: none;
     align-items: center;
+    
 }
 section {
 display: flex;
@@ -50,6 +52,8 @@ section .text-button {
     color: #FF3998;
     font: bold;
     font-size: 20px;
+    border-radius: 2rem;
+    border: solid 3px transparent;
 }
 .text-button p {
 color: #555555;
@@ -104,4 +108,105 @@ line-height: 48.41px;
     }
 .press div img {
     margin: 10px;
+}
+.showcase h2 {
+    font-size: 40px;
+    margin-top: 30px;
+}
+.showcase p {
+    color: #555555;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.showcase a {
+    color: #555555;
+}
+main {
+display: grid;
+}
+
+.card {
+    display: grid;
+    grid-area: card;
+    width: 300px;
+    height: 400px;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px;
+    grid-template-areas: "image" "text" "stats";
+
+    border-radius: 18px;
+    background: #eeeeee;
+    text-align: center;
+}
+.card2 {
+    display: grid;
+    width: 300px;
+    height: 400px;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px;
+    grid-template-areas: "image" "text" "stats";
+
+    border-radius: 18px;
+    background: #eeeeee;
+    text-align: center;
+}
+.card3 {
+    display: grid;
+    width: 300px;
+    height: 400px;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px;
+    grid-template-areas: "image" "text" "stats";
+
+    border-radius: 18px;
+    background: #eeeeee;
+    text-align: center;
+}
+.card4 {
+    display: grid;
+    width: 300px;
+    height: 400px;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px;
+    grid-template-areas: "image" "text" "stats";
+
+    border-radius: 18px;
+    background: #eeeeee;
+    text-align: center;
+}
+.card-image {
+    grid-area: image;
+    background: url(./assets/ntfs/ntf-1.svg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-image2 {
+    grid-area: image;
+    background: url(./assets/ntfs/nft-2.svg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-image3 {
+    grid-area: image;
+    background: url(./assets/ntfs/ntf-3.svg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-image4 {
+    grid-area: image;
+    background: url(./assets/ntfs/ntf-4.svg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-text{
+    grid-area: text;
+    margin: 25px;
+}
+.card-stats {
+    grid-area: stats;
 }
