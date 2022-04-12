@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    max-width: 1340px;
+    margin: 0 auto;
+    position: relative ;
+    margin: 34px;
+}
+h1 h2 h3 {
+    font-family: 'DM Serif Display', serif;
+}
+ul {
+    list-style: none;
+}
+header img div.logo div.icon {
+    display: flex;
+}
+nav .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 50%;
+    padding: 32px;
+}
+nav ul {
+    display: none;
+    align-items: center;
+}
+a{
+    color: #555555;
+    text-decoration: none;
+}
+section {
+display: block;
+margin-top: 80px;
+max-width: 500px;
+}
+section img{
+    position: absolute;
+    max-height: 500px;
+    margin-left: 180px ;
+    margin-top: -180px;  
+
+}
+section .text-button {
+    position:relative;
+    text-align:left;
+    margin:32px;
+    min-width: 240px;
+}
+.text-button p:first-child{
+    color: #FF3998;
+    font: bold;
+    font-size: 20px;
+    border-radius: 2rem;
+    border: solid 3px transparent;
+}
+.text-button p {
+color: #555555;
+font-size: 20px;
+line-height: 30px;
+margin-bottom: 24px;
+}
+.text-button h1 {
+    color: #111111;
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+button {
+    background: white;
+    font-family: 'Inter', sans-serif;
+    width: 188px;
+    height: 75px;
+    border-radius: 110px;
+    border-color: red;
+    font-size: 22px ;
+    border-width: 5px;
+}
+.upsell {
+    background-image:url("./assets/background.svg") ;
+    background-repeat: no-repeat;
+    min-width: 428px;
+    min-height: 326px;
+    margin-top: 100px;
+    text-align: left;
+    }
+.upsell div {
+text-align: left;
+padding-top: 100px;
+}
+.upsell h2{
+font-size: 40px;
+margin-bottom: 20px;
+line-height: 48.41px;
+margin-left: 34px;
+}
+.upsell p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 34px;
+}
+    .logo-4 {
+        display: none;
+    }
+    .press {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+.press div img {
+    margin: 10px;
+}
+.showcase h2 {
+    font-size: 40px;
+    margin-top: 30px;
+}
+.showcase p {
+    color: #555555;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.showcase a {
+    color: #555555;
+}
+.card {
+    display: grid;
+    grid-area: card;
+    width: 300px;
+    height: 400px;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    "image" "image";
+
+
+    border-radius: 18px;
+    background: #eeeeee;
+}
+.card-image {
+    grid-area: image;
+    background: url(./assets/ntfs/ntf-1.svg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text{
+    grid-area: text;
+    margin: 25px;
+    text-align: left;
+    grid-column: 1;
+}
+.footer-upsell {
+    display: block;
+    max-width: 330px;
+}
+.footer-upsell p:first-child {
+    color: #FF3998;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.footer-upsell h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.footer-upsell p {
+font-size: 20px;
+line-height: 30px; 
+}
+.footer-upsell button {
+    margin-top: 30px; 
+}
+.footer-upsell img {
+  display: block;
+    position: absolute;
+    margin-left: 320px;
+    margin-top: -300px;
+}
+
+.icons img {
+   margin: 5px;
+}
+.icons h4 {
+    color: #555555;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+footer .footer-right{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.col {
+margin-right: 80px;
+margin-bottom: 30px;
+cursor: pointer;
+}
+.col h4 {
+    padding-bottom: 15px;
+    color: #555555;
+}
+.col li {
+    padding: 4px 0px;
+    color: #555555;
+}
+.footer-copy {
+    display: flex;
+    justify-content: space-between;
+    color: #555555;
+    margin-top: 50px;
+    margin-bottom: 50px;
+} 
+@media only screen and (min-width: 1440px){
+    body {
+        padding: 32px;
+    }
+    nav .icon {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    section img {
+        margin-left: 500px;
+        margin-top: -100px;
+    }
+    .logo-4 {
+        display: flex;
+    }
+.footer-upsell img {
+    display: block;
+    position: absolute;
+    width: 200px;
+    margin-left: 900px;
+}
+.footer-upsell {
+    display: block;
+    max-width: 500px;
+}
+footer .footer-right {
+ display: flex;
+ justify-content: right;
+ margin-left: 400px;
+}
+
+
+}
